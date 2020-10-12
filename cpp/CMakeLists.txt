@@ -41,4 +41,4 @@ install( EXPORT VITA49Config
   NAMESPACE VITA49::
   DESTINATION "share/VITA49" )
 
-  install (  FILES vrtConfig.cmake "${version_config}"  DESTINATION "share/VITA49" )
+  install (  FILES VITA49Config.cmake "${version_config}"  DESTINATION "share/VITA49" )
