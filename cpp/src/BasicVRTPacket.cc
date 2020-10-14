@@ -25,12 +25,12 @@
 
 using namespace vrt;
 
-int32_t BasicVRTPacket::MAX_PACKET_LENGTH = 65536*4;
-int32_t BasicVRTPacket::MAX_HEADER_LENGTH = 7*4;
-int32_t BasicVRTPacket::MAX_PKT_SPECIFIC_PROLOGUE_LENGTH = 10*4;
-int32_t BasicVRTPacket::MAX_PROLOGUE_LENGTH = BasicVRTPacket::MAX_HEADER_LENGTH + BasicVRTPacket::MAX_PKT_SPECIFIC_PROLOGUE_LENGTH;
-int32_t BasicVRTPacket::MAX_TRAILER_LENGTH = 1*4;
-int32_t BasicVRTPacket::MAX_PAYLOAD_LENGTH = BasicVRTPacket::MAX_PACKET_LENGTH - BasicVRTPacket::MAX_PROLOGUE_LENGTH - BasicVRTPacket::MAX_TRAILER_LENGTH;
+const int32_t BasicVRTPacket::MAX_PACKET_LENGTH = 65536*4;
+const int32_t BasicVRTPacket::MAX_HEADER_LENGTH = 7*4;
+const int32_t BasicVRTPacket::MAX_PKT_SPECIFIC_PROLOGUE_LENGTH = 10*4;
+const int32_t BasicVRTPacket::MAX_PROLOGUE_LENGTH = BasicVRTPacket::MAX_HEADER_LENGTH + BasicVRTPacket::MAX_PKT_SPECIFIC_PROLOGUE_LENGTH;
+const int32_t BasicVRTPacket::MAX_TRAILER_LENGTH = 1*4;
+const int32_t BasicVRTPacket::MAX_PAYLOAD_LENGTH = BasicVRTPacket::MAX_PACKET_LENGTH - BasicVRTPacket::MAX_PROLOGUE_LENGTH - BasicVRTPacket::MAX_TRAILER_LENGTH;
 
 
 const BasicVRTPacket BasicVRTPacket::NULL_PACKET = BasicVRTPacket(vector<char>(0), true);
