@@ -94,7 +94,7 @@ namespace vrt {
      *  </pre>
      *  @see #getPacketLength()
      */
-    public: static const int32_t MAX_PACKET_LENGTH = 65536*4;
+    public: static const int32_t MAX_PACKET_LENGTH;// = 65536*4;
 
     /** The maximum length of the header in bytes (all optional fields included). Note that
      *  in cases where optional fields are not included, the header will be shorter.
@@ -103,7 +103,7 @@ namespace vrt {
      *  </pre>
      *  @see #getHeaderLength()
      */
-    public: static const int32_t MAX_HEADER_LENGTH = 7*4;
+    public: static const int32_t MAX_HEADER_LENGTH;// = 7*4;
 
     /** The maximum length of the packet specific prologue (PSP) in bytes (all optional fields
      *  included). Note that in cases where optional fields are not included, the PSP will
@@ -113,7 +113,7 @@ namespace vrt {
      *  </pre>
      *  @see #getPktSpecificPrologueLength()
      */
-    public: static const int32_t MAX_PKT_SPECIFIC_PROLOGUE_LENGTH = 10*4;
+    public: static const int32_t MAX_PKT_SPECIFIC_PROLOGUE_LENGTH;// = 10*4;
 
     /** The maximum length of the prologue in bytes (all optional fields included). Note that
      *  in cases where optional fields are not included, the prologue will be shorter.
@@ -122,7 +122,7 @@ namespace vrt {
      *  </pre>
      *  @see #getPrologueLength()
      */
-    public: static const int32_t MAX_PROLOGUE_LENGTH = MAX_HEADER_LENGTH + MAX_PKT_SPECIFIC_PROLOGUE_LENGTH;
+    public: static const int32_t MAX_PROLOGUE_LENGTH;// = MAX_HEADER_LENGTH + MAX_PKT_SPECIFIC_PROLOGUE_LENGTH;
 
     /** The maximum length of the trailer in bytes.
      *  <pre>
@@ -130,7 +130,7 @@ namespace vrt {
      *  </pre>
      *  @see #getTrailerLength()
      */
-    public: static const int32_t MAX_TRAILER_LENGTH = 1*4;
+    public: static const int32_t MAX_TRAILER_LENGTH;// = 1*4;
 
     /** The <b>de-facto</b> maximum length of the payload in bytes. Note that the de-jure limit
      *  can be up to 28 bytes more than this when optional fields in the header, packet specific
@@ -142,7 +142,7 @@ namespace vrt {
      *  </pre>
      *  @see #getPayloadLength()
      */
-    public: static const int32_t MAX_PAYLOAD_LENGTH = MAX_PACKET_LENGTH - MAX_PROLOGUE_LENGTH - MAX_TRAILER_LENGTH;
+    public: static const int32_t MAX_PAYLOAD_LENGTH;// = MAX_PACKET_LENGTH - MAX_PROLOGUE_LENGTH - MAX_TRAILER_LENGTH;
 
     /** Represents a null VRT packet. */
     public: static const BasicVRTPacket NULL_PACKET;
