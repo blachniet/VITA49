@@ -37,8 +37,8 @@
 #include <stdlib.h>  // required for free(..) under clang
 #include <math.h>    // required for isnan(..)
 
-#define __STDC_LIMIT_MACROS  1 /* Required to include the __INT64_C(..) macro in stdint.h */
-#define __STDC_FORMAT_MACROS 1 /* Required to include the PRI?64 constants in inttypes.h */
+// #define __STDC_LIMIT_MACROS  1 /* Required to include the __INT64_C(..) macro in stdint.h */
+//#define __STDC_FORMAT_MACROS 1 /* Required to include the PRI?64 constants in inttypes.h */
 #include <stdint.h>
 #include <inttypes.h>
 
