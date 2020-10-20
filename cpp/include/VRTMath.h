@@ -136,10 +136,6 @@ inline double __bswap_64 (double val) {
 _Clang_Pragma("clang diagnostic push")
 _Clang_Pragma("clang diagnostic ignored \"-Wsign-compare\"")
 
-#define __USE_MISC 1
-#include  <endian.h>
-# define BYTE_ORDER BIG_ENDIAN
-
 
 namespace vrt {
   // Note: Due to include file dependencies the following functions are defined
